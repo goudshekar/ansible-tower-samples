@@ -8,7 +8,7 @@
     debug: msg="{{ ansible_default_ipv4.gateway }}"
   - name: Check the relase version
     debug: msg="{{ ansible_distribution_version }}"
-  - service: 
+  - service: Check SSH status
       name: ssh
       state: started
 ...

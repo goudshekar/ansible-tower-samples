@@ -8,4 +8,10 @@
     debug: msg="{{ ansible_default_ipv4.gateway }}"
   - name: Check the relase version
     debug: msg="{{ ansible_distribution_version }}"
+    
+  tasks:
+  - name: Check the http status
+    apt:
+      service: httpd
+      status: present
 ...

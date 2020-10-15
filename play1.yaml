@@ -9,6 +9,6 @@
   - name: Check the relase version
     debug: msg="{{ ansible_distribution_version }}"
   - service: 
-      name: nginx
+      name: ssh
       state: started
 ...

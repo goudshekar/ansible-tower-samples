@@ -10,5 +10,5 @@
     debug: msg="{{ ansible_distribution_version }}"
   - name: Check the HTTP status
     service: httpd
-    state: present
+    state: started
 ...

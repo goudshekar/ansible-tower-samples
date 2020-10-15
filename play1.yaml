@@ -8,7 +8,7 @@
     debug: msg="{{ ansible_default_ipv4.gateway }}"
   - name: Check the relase version
     debug: msg="{{ ansible_distribution_version }}"
-  - name: Check the HTTP status
-    service: httpd
-    state: started
+  - service: 
+      name: httpd
+      state: started
 ...

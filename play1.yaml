@@ -5,7 +5,7 @@
 
   tasks:
   - name: Check the IP address
-    debug: msg="{{ ansible_default_ipv4.gateway }}"
+    debug: msg="{{ ansible_default_ipv4 }}"
   - name: Check the relase version
-    debug: msg="{{ ansible_distribution_version }}"
+    debug: msg="{{ ansible_distribution }}"
 ...

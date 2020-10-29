@@ -1,6 +1,6 @@
 ---
 - name: Check the OS version
-  hosts: all
+  hosts: localhost
   gather_facts: yes
 
   tasks:
@@ -8,11 +8,4 @@
     debug: msg="{{ ansible_default_ipv4.gateway }}"
   - name: Check the relase version
     debug: msg="{{ ansible_distribution_version }}"
-  - name: Install the apache2 
-    apt:
-      name: apache2
-      state: latest
-  - service:
-      name: apache2
-      state: started
 ...

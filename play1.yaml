@@ -10,4 +10,6 @@
     debug: msg="{{ ansible_distribution }}"
   - name: Check the ansible_architecture
     debug: msg="{{ ansible_architecture }}"
+  - name: Interface name
+    debug: msg="{{ ansible_eth0.device }}"
 ...
